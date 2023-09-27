@@ -639,7 +639,11 @@ struct Global
     /*
      * regex.c
      */
+#if defined(__APPLE__)
+    regex_t *preg_regex_c_1;
+#else
     struct re_pattern_buffer *preg_regex_c_1; /* from regex.c 339 */
+#endif
     int *regex_ok_regex_c_1; /* from regex.c 340 */
 
 /*

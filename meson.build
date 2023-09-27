@@ -200,3 +200,6 @@ gnome.post_install(
     update_desktop_database: true,
     gtk_update_icon_cache: true,
 )
+
+install_data('GTKWave.icns', install_dir : 'Contents/Resources')
+install_data('Info.plist', install_dir : 'Contents')
